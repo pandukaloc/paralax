@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.8" client="site" method="install">
+    <name>home-video</name>
+    <author>Panduka</author>
+    <creationDate>16/02/2018</creationDate>
+    <copyright>Copyright (C) Tekto. All rights reserved.</copyright>
+    <authorEmail>panduka29@gmail.com</authorEmail>
+    <version>1.0.0</version>
+    <description>Display the background video of the home page</description>
+    <files>
+        <filename>mod_tictok_home_video_app</filename>
+        <filename module="mod_tictok_home_video_app">mod_tictok_home_video_app.php</filename>
+
+    </files>
+</extension>

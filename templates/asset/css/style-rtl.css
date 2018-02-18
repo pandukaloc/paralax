@@ -1,0 +1,609 @@
+/*
+Template Name: AppLora - App Landing Page
+Author: Alaa Ahmed
+Author URI: https://themeforest.net/user/alaa_ahmed
+Description: AppLora App Landing Page
+Version: 1.0
+Tags: 	app, app landing, app landing page, app landing template, App Showcase, app store, app template, app website, clean app landing, creative app landing page, landing page, mobile, mobile app landing page, modern app Landing, rtl support
+*/
+
+/*=================================================================
+    Basic Setup RTL [Homepage 01]
+==================================================================*/
+
+@font-face {
+	font-family: 'AraJozoor-Regular';
+	src: url('../fonts/AraJozoor-Regular.ttf') format("truetype");
+}
+
+body {
+    font-family:'AraJozoor-Regular' !important;
+}
+
+a {
+    font-family:'AraJozoor-Regular' !important;
+}
+
+.overlay {
+    background: -webkit-linear-gradient(-45deg, rgba(95, 44, 130, .99), rgba(202, 73, 102, .90));
+    background: -moz-linear-gradient(-45deg, rgba(95, 44, 130, .99), rgba(202, 73, 102, .90));
+    background: -o-linear-gradient(-45deg, rgba(95, 44, 130, .99), rgba(202, 73, 102, .90));
+    background: linear-gradient(-45deg, rgba(95, 44, 130, .99), rgba(202, 73, 102, .90));
+}
+
+
+/*Header*/
+
+.header-inner {
+    float: right
+}
+
+.header-content h4 {
+    font-size: 20px;
+}
+
+.nav-sec .dropdown-menu > li > a,
+.nav-sec .navbar-nav > li > a {
+    font-weight: 100;
+    letter-spacing: 0;
+}
+
+.dropdown .dropdown-icon {
+    margin-left: 0;
+    margin-right: 5px
+}
+
+.dropdown-menu {
+    left: 0;
+    right: auto;
+    margin-left: 0;
+    margin-right: -35px;
+}
+
+.bttn-applora-gradient i {
+    margin-right: 0;
+    margin-left: 10px;
+    position: relative;
+}
+
+.header-content .bttn-head a:first-child {
+    margin-left: 20px
+}
+
+.bttn-applora-gradient {
+    letter-spacing: 0;
+    font-weight: 100
+}
+
+.bttn-applora-gradient span {
+    font-size: 15px;
+}
+.pd-carousel .header-content .bttn-applora a:first-child {
+    margin: 0;
+    margin-left: 20px
+}
+.phone-carousel .owl-theme .owl-dots {
+    right: auto;
+    left: 0
+}
+
+.nav-sec .navbar-nav > li > a {
+    font-size: 15px
+}
+
+.about .mobile-features .features-slider:after {
+    left: auto;
+    right: 59px;
+    border-left: 1px dashed #ccc;
+}
+
+.about .mobile-features .tab-content {
+    margin-left: 0;
+    margin-right: 245px
+}
+
+.about .mobile-features .nav {
+    float: right
+}
+
+.about .mobile-features .nav-pills>li:nth-child(1) > a,
+.about .mobile-features .nav-pills>li:nth-child(2) > a,
+.about .mobile-features .nav-pills>li:nth-child(3) > a,
+.about .mobile-features .nav-pills>li:nth-child(4) > a,
+.about .mobile-features .nav-pills>li:nth-child(5) > a
+{
+    left: auto;
+}
+
+.about .mobile-features .nav-pills>li:nth-child(1) > a,
+.about .mobile-features .nav-pills>li:nth-child(5) > a
+{
+    right: 0;
+}
+
+.about .mobile-features .nav-pills>li:nth-child(2) > a,
+.about .mobile-features .nav-pills>li:nth-child(4) > a
+{
+    right: 80px;
+}
+
+.about .mobile-features .nav-pills>li:nth-child(3) > a {
+    right: 116px;
+}
+
+.about .mobile-features .tab-content>.tab-pane h4 {
+    font-weight: 100;
+    font-size: 23px
+}
+
+.features .feat-right .single-feat .icon-place {
+    float: right;
+    margin-right: 0;
+    margin-left: 20px
+}
+
+.features .feat-left .single-feat .icon-place {
+    float: left;
+    margin-left: 0;
+    margin-right: 20px
+}
+
+.features .feat-right .single-feat .feat-text {
+    text-align: right
+}
+
+.features .feat-left .single-feat .feat-text {
+    text-align: left
+}
+
+.features .single-feat .feat-text h4 {
+    font-weight: 100;
+    font-size: 20px
+}
+
+.feat-one {
+    padding: 130px 0 100px;
+}
+
+.screenshots .owl-carousel .owl-item {
+    float: right
+}
+
+.statistic-app .statis-img img {
+    right: 0;
+    left: auto
+}
+
+.statistic-app .statis-img img:first-child {
+    right: 25%;
+    left: auto
+}
+
+.statistic-app .statis-icon {
+    float: right
+}
+
+.statistic-app .statis-icon i {
+    margin-right: 0;
+    margin-left: 17px
+}
+
+.statistic-app .statis-block {
+    text-align: right
+}
+
+.curvedarrow {
+    border-right: none;
+    border-left: 9px solid #fff;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+.curvedarrow:after {
+    right: -9px;
+    border-radius: 0px 20px 0 0px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.post-title,
+.post
+{
+    letter-spacing: 0
+}
+
+.faq-content-wrapper:before {
+    right: -40px;
+    left: auto
+}
+
+.faqs .panel-heading:before {
+    right: -48px;
+    left: auto
+}
+
+.faqs .panel:before {
+    right: -2px;
+    left: auto
+}
+
+.faqs .panel-title a:after {
+    left: -22px;
+    right: auto
+}
+
+.one-post .post-text .title-date {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0
+}
+
+.one-post .post-text .title-text .post-details a i {
+    margin-left: 5px;
+    margin-right: 0
+}
+
+.one-post .post-text .title-text .post-details a {
+    margin-right: 0;
+    margin-left: 16px
+}
+
+.contact-us .single-info .info-text h4 {
+    font-weight: 100
+}
+
+.contact-us .mobile-place .mobile-preview {
+    right: 7.6%;
+    left: auto;
+    text-align: right;
+}
+
+.subscribe-box .subscribe-form button.btn {
+    float: right;
+    right: auto;
+    left: 3px
+}
+
+.subscribe-box .subscribe-form.name-email input {
+    padding-right: 25px;
+    padding-left: 75px;
+}
+
+.subscribe-box .subscribe-form .icon-paper-plane::after {
+    right: 0;
+    left: auto
+}
+
+.subscribe-box .subscribe-form button:hover .icon-paper-plane::after {
+    right: 50px;
+    left: auto;
+    opacity: 1;
+}
+
+.footer .copyright p {
+    font-weight: 100
+}
+
+.photo-header img {
+    float: left
+}
+
+.home-blog .blog-content .bread-links .breadcrumb>li+li:before {
+    content: "\f104";
+}
+.home-blog .blog-content .bread-links .breadcrumb li {
+    font-weight: 100
+}
+.post-pagination ul li:first-child {
+    margin-right: 0
+}
+.post-pagination ul li:last-child {
+    margin-right: 5px
+}
+.btn-more {
+    right: auto;
+    left: 20px
+}
+.article-tag {
+    font-size: 12px
+}
+.blog-social-icon {
+    right: 17px;
+    left: auto;
+}
+.blog-social {
+    padding: 20px 86px 18px 60px;
+}
+.part-title h4:after {
+    right: 0;
+    left: auto
+}
+#search-submit {
+    right: auto;
+    left: 6px
+}
+.posts-style .tab-post-nav li {
+    float: right
+}
+.archive-blog .archive-content ul li span {
+    float: left
+}
+.tags-blog .tags-content a.bttn-applora-gradient span {
+    font-size: 12px;
+    font-weight: 100
+}
+.ribbon-front {
+    left: auto;
+    right: -10px;
+    border-radius: 4px 0 0 4px;
+}
+.ribbon-wrapper {
+    right: -20px;
+    left: auto
+}
+.ribbon-edge-topleft {
+    left: auto;
+    right: -10px;
+    border-width: 0 10px 10px 0;
+    border-color: transparent transparent #5f2c82 transparent;
+}
+.ribbon-front i {
+    margin-right: 0;
+    margin-left: 10px
+}
+
+.our-story .story-text p {
+    line-height: 33px
+}
+blockquote:before {
+    left: auto;
+    right: 0
+}
+.post-det .tags-post {
+    text-align: right
+}
+.post-det .tags-post p i {
+    margin-right: 0;
+    margin-left: 10px
+}
+.post-journy .next-butt,
+.post-det .share-post {
+    text-align: left
+}
+.post-det .share-post span {
+    margin-right: 0;
+    margin-left: 20px
+}
+.post-det .share-post a {
+    margin-right: 0;
+    margin-left: 20px
+}
+.post-det .share-post a:last-child {
+    margin-left: 0
+}
+.post-journy .next-butt .bttn-applora-gradient i {
+    margin-left: 0;
+    margin-right: 10px
+}
+.comments-section h4 i, .comment-reply-form h4 i {
+    margin-right: 0;
+    margin-left: 10px
+}
+.replay i {
+    margin-right: 0;
+    margin-left: 5px
+}
+.comment-wrap {
+    margin-left: 0;
+    margin-right: 20px
+}
+.comment-wrap .author-avatar {
+    margin-right: -25px;
+    margin-left: 20px;
+}
+.sgl-post blockquote i {
+    margin-right: 0;
+    margin-left: 10px;
+    float: right;
+}
+.sgl-post .btn-author {
+    left: 20px;
+    right: auto
+}
+.sgl-post .post-journy {
+    float: left;
+}
+.sgl-post .post-journy a:first-child {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.sgl-post .post-journy a.prev-butt i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+.sgl-post .post-journy a.next-butt i {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+
+/*=================================================================
+    Basic Setup RTL [Homepage 02]
+==================================================================*/
+
+.mobile-services .right-ser-side .single-ser .icon-ser {
+    float: right;
+}
+
+.mobile-services .right-ser-side .single-ser .sin-ser-place {
+    margin-left: 0;
+    margin-right: 80px;
+    text-align: right;
+}
+
+.mobile-services .right-ser-side .single-ser .icon-ser:before {
+    left: 105%;
+    right: auto
+}
+
+.mobile-services .left-ser-side .single-ser .icon-ser {
+    float: left
+}
+
+.mobile-services .left-ser-side .single-ser .sin-ser-place {
+    margin-left:80px;
+    margin-right: 0;
+    text-align: left;
+}
+
+.mobile-services .left-ser-side .single-ser .icon-ser:before {
+    right: 105%;
+    left: auto
+}
+
+.pricing-table02 .pricingTable02 .month,
+.a-btn-slide-text {
+    letter-spacing: 0;
+}
+
+.qualityBox .title,
+.single-one-team .personal-det h4,
+.pricing-table02 .pricingTable02 .title {
+    font-weight: 100
+}
+
+.single-one-team .personal-det {
+    right: 10%;
+    left: 0;
+}
+
+.single-one-team .personal-det .social-personal {
+    left: auto;
+    right: 3%
+}
+
+.demo02 .photo-header img {
+    float: none
+}
+
+.coming-soon .count-date h4 {
+    font-weight: 100
+}
+
+/*=================================================================
+    Responsive RTL
+==================================================================*/
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .about .mobile-features .features-slider:after {
+        right: 3px;
+        left: auto
+    }
+    .our-story .story-img img {
+        float: left
+    }
+    .faqs .faqs-img img {
+        float: right
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .header-content .bttn-head a:first-child {
+        margin-bottom: 0px;
+    }
+    .about .mobile-features .nav {
+        float: none
+    }
+    .about .mobile-features .tab-content {
+        margin-right: 0
+    }
+    .feat-width {
+        float: right
+    }
+    .statistic-app .statis-img img:last-child {
+        left: auto;
+        right: 10%;
+    }
+    .search-blog, .posts-style, .tags-blog {
+        width: 45%;
+        float: right;
+    }
+    .category-blog, .photos-blog, .archive-blog {
+        width: 45%;
+        float: left;
+    }
+    .blog-sidebar .search-blog,
+    .blog-sidebar .posts-style,
+    .blog-sidebar .tags-blog {
+        width: 45%;
+        float: right
+    }
+    .blog-sidebar .category-blog,
+    .blog-sidebar .photos-blog,
+    .blog-sidebar .archive-blog {
+        width: 45%;
+        float: left
+    }
+    .blog-sidebar .left-side-blog {
+        box-shadow: none;
+        padding: 0
+    }
+    .blog-sidebar .search-blog,
+    .blog-sidebar .category-blog,
+    .blog-sidebar .posts-style,
+    .blog-sidebar .photos-blog,
+    .blog-sidebar .archive-blog,
+    .blog-sidebar .tags-blog {
+        background-color: #fff;
+        -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 0 35px rgba(0, 0, 0, .1);
+        -o-box-shadow: 0 0 35px rgba(0, 0, 0, .1);
+        box-shadow: 0 0 35px rgba(0, 0, 0, .1);
+        padding: 20px;
+    }
+    .blog-sidebar .category-blog {
+        margin-top: 0
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pd-carousel .header-content .bttn-head a:first-child {
+        margin-right: 0;
+        margin-left: 20px
+    }
+    .pd-carousel .header-content .bttn-applora a:first-child {
+        margin: 0
+    }
+    .header-content .bttn-head a:first-child {
+        margin: 0;
+    }
+    .header-content h4 {
+        font-size: 17px;
+        line-height: 28px;
+    }
+    .about .mobile-features .tab-content {
+        margin-right: 0
+    }
+    .about .mobile-features .nav {
+        float: none;
+    }
+    .one-post .post-text .title-text .post-details {
+        text-align: right;
+    }
+    .posts-style .tab-post-nav li a {
+        font-size: 14px;
+    }
+    .nav-sec .dropdown-toggle span {
+        margin-right: 5px;
+        margin-left: 0
+    }
+    .post-det .share-post {
+        text-align: right
+    }
+    .post-journy .prev-butt .bttn-applora-gradient i,
+    .post-journy .next-butt .bttn-applora-gradient i {
+        margin: 0
+    }
+}

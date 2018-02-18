@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.8" client="site" method="install">
+    <name>home-testimonials</name>
+    <author>Panduka</author>
+    <creationDate>16/02/2018</creationDate>
+    <copyright>Copyright (C) Tekto. All rights reserved.</copyright>
+    <authorEmail>panduka29@gmail.com</authorEmail>
+    <version>1.0.0</version>
+    <description>Display the testimonials part of the home page</description>
+    <files>
+        <filename>mod_tictok_home_testimonials</filename>
+        <filename module="mod_tictok_home_testimonials">mod_tictok_home_testimonials.php</filename>
+
+    </files>
+</extension>

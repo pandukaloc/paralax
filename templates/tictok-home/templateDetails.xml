@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 3.2//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/3.2/template-install.dtd">
+<extension version="3.2" type="template" client="site">
+  <name>tictok-homepage</name>
+  <version>1.0</version>
+  <creationDate>15/02/2018</creationDate>
+  <author>panduka </author>
+  <authorEmail>panduk29@gmail.com</authorEmail>
+  <copyright>tictok (Pvt) Ltd.</copyright>
+  <description>The Home Page template for tictok</description>
+  <files>
+    <filename>index.php</filename>
+  </files>
+  <positions>
+    <position>mod_tictok_home_navigation</position>
+	<position>mod_tictok_home_banner</position>
+    <position>mod_tictok_home_aboutus</position>
+    <position>mod_tictok_home_features</position>
+    <position>mod_tictok_home_randomfeatures</position>
+    <position>mod_tictok_home_downloadsection</position>
+    <position>mod_tictok_home_screenshots</position>
+    <position>mod_tictok_home_statis</position>
+    <position>mod_tictok_home_testimonials</position>
+    <position>mod_tictok_home_video_app</position>
+    <position>mod_tictok_home_pricing</position>
+    <position>mod_tictok_home_ourteam</position>
+    <position>mod_tictok_home_ourstory</position>
+    <position>mod_tictok_home_faq</position>
+    <position>mod_tictok_home_newssection</position>
+    <position>mod_tictok_home_faq</position>
+
+
+
+  </positions>
+<config>
+</config>
+</extension>

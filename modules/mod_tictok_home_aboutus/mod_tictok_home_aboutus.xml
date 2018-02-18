@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.8" client="site" method="install">
+    <name>home-aboutus</name>
+    <author>Panduka</author>
+    <creationDate>16/02/2018</creationDate>
+    <copyright>Copyright (C) Tictok. All rights reserved.</copyright>
+    <authorEmail>panduka29@gmail.com</authorEmail>
+    <version>1.0.0</version>
+    <description>Display the about us part of the page</description>
+    <files>
+        <filename>mod_tictok_home_aboutus</filename>
+        <filename module="mod_tictok_home_aboutus">mod_tictok_home_aboutus</filename>
+
+    </files>
+</extension>

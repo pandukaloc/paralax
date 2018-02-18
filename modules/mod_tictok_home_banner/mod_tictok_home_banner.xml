@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.8" client="site" method="install">
+    <name>home_banner</name>
+    <author>Panduka</author>
+    <creationDate>16/02/2018</creationDate>
+    <copyright>Copyright (C) Tictok. All rights reserved.</copyright>
+    <authorEmail>panduka29@gmail.com</authorEmail>
+    <version>1.0.0</version>
+    <description>Display the home page banner part</description>
+    <files>
+        <filename>mod_tictok_home_banner</filename>
+        <filename module="mod_tictok_home_banner">mod_tictok_home_banner.php</filename>
+
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="category"
+                       type="category"
+                       extension="com_content"
+                       label="Select a category"
+                       default="70"
+                       required="required"/>
+           </fieldset>
+
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.8" client="site" method="install">
+    <name>Page header</name>
+    <author>Panduka</author>
+    <creationDate>26/07/2017</creationDate>
+    <copyright>Copyright (C) Affno Pvt Ltd. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>pavithra@affno.lk</authorEmail>
+    <authorUrl>www.affno.lk</authorUrl>
+    <version>1.0.0</version>
+    <description>Display the Page header</description>
+    <files>
+        <filename>mod_page_header.xml</filename>
+        <filename module="mod_page_header">mod_page_header.php</filename>
+
+    </files>
+</extension>
