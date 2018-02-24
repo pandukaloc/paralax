@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿<?php
+error_reporting(0);
+?>
+
+
+<!DOCTYPE html>
 <html lang="en">
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -57,13 +62,11 @@
 
     <!-- End Navigation Bar -->
 
-    <div class="container">
-        <div class="row">
+    
 
             <jdoc:include type="modules" name="mod_tictok_home_banner" />
             <!-- End Photo Here -->
-        </div>
-    </div>
+      
     <!-- End Container -->
 </header>
 <!-- End Header -->
