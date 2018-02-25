@@ -20,14 +20,25 @@ public function getHtml()
 $menuItem="";
 
     foreach ($itemslevel1 as $itemlevel1) {
-
+$url=$itemlevel1->link;
+ 
+        $parts = parse_url($url);
+        parse_str($parts['query'], $query);
+        $catid=$query['id'];
+ $db = JFactory::getDbo();
+    $query = $db->getQuery(true)
+        ->select($db->quoteName(array('cat.alias'), array('alias')))
+        ->from($db->quoteName('#__categories', 'cat'))
+        ->where($db->quoteName('cat.id') . '='. $db->Quote($catid));   
+    $db->setQuery($query);
+    $catid =  ($items = $db->loadObject())?$items:array();
         if ($itemlevel1->type != "heading") {
             $class = '';
             if($currentmenuitem == $itemlevel1->id){
                 $class='class="active"';
             }
             $menuItem .= " <li" . $class . ">";
-            $menuItem .= "<a href=\"#$itemlevel1->path\" class=\"scroll-link\"><span>$itemlevel1->title</span></a>";
+            $menuItem .= "<a href=\"#$catid->alias\" class=\"scroll-link\"><span>$itemlevel1->title</span></a>";
             $menuItem .= "</li>";
 
 

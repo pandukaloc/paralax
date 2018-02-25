@@ -12,6 +12,7 @@
         <filename module="mod_tictok_home_features">mod_tictok_home_features</filename>
 
     </files>
+
       <config>
         <fields name="params">
             <fieldset name="basic">
@@ -24,5 +25,13 @@
            </fieldset>
 
         </fields>
+
+    <field
+    name="title"
+    type="sql"
+    default="10"
+    label="Select an article"
+    query="SELECT id AS value, title FROM #__content"
+    />
     </config>
 </extension>

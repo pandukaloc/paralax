@@ -3,66 +3,31 @@ defined('_JEXEC') or die;
 
 class modfeatures
 {
-
-    public function getHtml()
+  public function getHtml($categoryid)
     {
+        
         $db = JFactory::getDbo();
 
-        $query = $db->getQuery(true)
-            ->select($db->quoteName(array('m.id', 'm.title', 'm.alias', 'm.params', 'm.type', 'm.link', 'm.path'), array('id', 'title', 'alias', 'params', 'type', 'link', 'path')))
-            ->from($db->quoteName('#__menu', 'm'))
-            ->where($db->quoteName('m.menutype') . '="mainmenu"' . ' AND ' . $db->quoteName('m.published') . '=1' . ' AND ' . $db->quoteName('m.level') . '=1' )
-            ->order($db->quoteName('m.lft') . ' ASC');
+   $query = $db->getQuery(true)
+            ->select($db->quoteName(array('c.id', 'c.title', 'c.introtext', 'c.images','ca.alias', 't.alias' ), array('id', 'title', 'introtext', 'images', 'caalias', 'talias')))
+
+            ->from($db->quoteName('#__content', 'c', '#__categories','ca', '#__tags','t' ))  
+               ->join('INNER', $db->quoteName('#__categories', 'ca') . ' ON (' . $db->quoteName('c.catid') . ' = ' . $db->quoteName('ca.id') . ')')
+
+                  ->join('INNER', $db->quoteName('#__contentitem_tag_map', 'tm') . ' ON (' . $db->quoteName('c.id') . ' = ' . $db->quoteName('tm.content_item_id') . ')')
+
+                   ->join('INNER', $db->quoteName('#__tags', 't') . ' ON (' . $db->quoteName('t.id') . ' = ' . $db->quoteName('tm.tag_id') . ')')
+                 
+                           
+            ->where($db->quoteName('c.catid') . '='.$db->Quote($categoryid) . ' AND ' . $db->quoteName('c.state') . '=1' )
+            ->order($db->quoteName('c.ordering') . ' ASC');
 
 
         $db->setQuery($query);
-        $items = $db->loadObjectList();
+        $items = ($items = $db->loadObjectList())?$items:array();
+        
+            return $items;
 
-        $menuItem = "<ul class=\"nav navbar-nav\" id=\"mainNav\">";
-
-        foreach ($items as $item) {
-            if ($db->loadResult()) {
-                $menuItem .= " <li class=\"active\" id=\"firstLink\">";
-                $menuItem .= "<a href=\"#\" class=\"scroll-link\">$item->title</a>";
-                $menuItem .= "</li>";
-
-
-            }
-
-        }
-
-        $menuItem.="</ul>";
-        return $menuItem;
-
-    }
-
-    public function getHtmlmob()
-    {
-        $db = JFactory::getDbo();
-
-        $query = $db->getQuery(true)
-            ->select($db->quoteName(array('m.id', 'm.title', 'm.alias', 'm.params', 'm.type', 'm.link', 'm.path'), array('id', 'title', 'alias', 'params', 'type', 'link', 'path')))
-            ->from($db->quoteName('#__menu', 'm'))
-            ->where($db->quoteName('m.menutype') . '="mainmenu"' . ' AND ' . $db->quoteName('m.published') . '=1' . ' AND ' . $db->quoteName('m.level') . '=2' . ' AND ' . $db->quoteName('m.id') . '!=101')
-            ->order($db->quoteName('m.lft') . ' ASC');
-
-
-        $db->setQuery($query);
-        $items = $db->loadObjectList();
-        $menuItem = "<ul class=\"nav navbar-nav\" id=\"mainNav\">";
-        foreach ($items as $item) {
-            if ($db->loadResult()) {
-                $menuItem .= " <li class=\"active\" id=\"firstLink\">";
-                $menuItem .= "<a href=\"#\" class=\"scroll-link\">$item->title</a>";
-                $menuItem .= "</li>";
-                $menuItem .= "</a>";
-
-
-            }
-        }
-        return $menuItem;
-    }
-
-}
+}}
 
 ?>

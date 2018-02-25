@@ -21,8 +21,16 @@
                        label="Select a category"
                        default="70"
                        required="required"/>
+
+                       <field
+                        name="title"
+                        type="sql"
+                        default="10"
+                        label="Select an article"
+                        query="SELECT id AS value, title FROM #__content"/>
            </fieldset>
 
         </fields>
+        
     </config>
 </extension>
