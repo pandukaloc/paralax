@@ -22,16 +22,37 @@
                        label="Select a category"
                        default="70"
                        required="required"/>
+
+                <field  name="title"
+                        type="sql"
+                        default="10"
+                        label="Select an article for left first"
+                        query="SELECT id, title FROM #__content"
+                        key_field="id"/>
+
+                <field name="titlea"
+                       type="sql"
+                       default="10"
+                       label="Select an article for for left normal"
+                       query="SELECT id, title AS titlea FROM #__content"
+                       key_field="id"/>
+
+                <field  name="titleb"
+                        type="sql"
+                        default="10"
+                        label="Select an articlefor right first"
+                        query="SELECT id, title AS titleb FROM #__content"
+                        key_field="id" />
+
+                <field  name="titlec"
+                        type="sql"
+                        default="10"
+                        label="Select an article right normal"
+                        query="SELECT id, title AS titlec FROM #__content"
+                        key_field="id"  />
+
+
            </fieldset>
-            <field
-                    name="title"
-                    type="sql"
-                    default="10"
-                    label="Select an article"
-                    query="SELECT id AS value, title FROM #__content"
-            />
-        </fields>
-
-
-    </config>
+       </fields>
+   </config>
 </extension>

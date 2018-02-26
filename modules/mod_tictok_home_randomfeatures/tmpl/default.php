@@ -1,11 +1,14 @@
-<section id="feat-one" class="feat-one">
+<section id="<?php echo $cat_alias->caalias;?>" class="feat-one">
 
 	<div class="container">
 		<!-- Start Single One -->
 		<div class="row">
 			<!-- Start Photo -->
 			<div class="col-md-6 col-md-push-6 wow fadeInRight" data-wow-duration="1s">
-				<div class="feat-one-img">
+                <?php if ($number % 2 == 0) {
+                $position = "";
+                } ?>
+                <div class="feat-one-img">
 					<img src="http://placehold.it/1283x1098" alt="Applora" class="img-responsive">
 				</div>
 			</div>
