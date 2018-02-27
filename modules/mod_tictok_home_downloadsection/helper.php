@@ -4,64 +4,44 @@ defined('_JEXEC') or die;
 class modpagedownload
 {
 
-    public function getHtml()
+    public function getcatalias($categoryid)
     {
         $db = JFactory::getDbo();
 
+
         $query = $db->getQuery(true)
-            ->select($db->quoteName(array('m.id', 'm.title', 'm.alias', 'm.params', 'm.type', 'm.link', 'm.path'), array('id', 'title', 'alias', 'params', 'type', 'link', 'path')))
-            ->from($db->quoteName('#__menu', 'm'))
-            ->where($db->quoteName('m.menutype') . '="mainmenu"' . ' AND ' . $db->quoteName('m.published') . '=1' . ' AND ' . $db->quoteName('m.level') . '=1' )
-            ->order($db->quoteName('m.lft') . ' ASC');
+            ->select($db->quoteName(array('ca.id', 'ca.alias'), array('id', 'caalias')))
+            ->from($db->quoteName('#__categories', 'ca'))
+            ->where($db->quoteName('ca.id') . '=' . $db->Quote($categoryid) . ' AND ' . $db->quoteName('ca.published') . '=1');
 
 
         $db->setQuery($query);
-        $items = $db->loadObjectList();
+        $items = ($items = $db->loadObject()) ? $items : array();
 
-        $menuItem = "<ul class=\"nav navbar-nav\" id=\"mainNav\">";
-
-        foreach ($items as $item) {
-            if ($db->loadResult()) {
-                $menuItem .= " <li class=\"active\" id=\"firstLink\">";
-                $menuItem .= "<a href=\"#\" class=\"scroll-link\">$item->title</a>";
-                $menuItem .= "</li>";
-
-
-            }
-
-        }
-
-        $menuItem.="</ul>";
-        return $menuItem;
-
+        return $items;
     }
 
-    public function getHtmlmob()
+    public function getHtml($categoryid)
     {
+
         $db = JFactory::getDbo();
 
+
         $query = $db->getQuery(true)
-            ->select($db->quoteName(array('m.id', 'm.title', 'm.alias', 'm.params', 'm.type', 'm.link', 'm.path'), array('id', 'title', 'alias', 'params', 'type', 'link', 'path')))
-            ->from($db->quoteName('#__menu', 'm'))
-            ->where($db->quoteName('m.menutype') . '="mainmenu"' . ' AND ' . $db->quoteName('m.published') . '=1' . ' AND ' . $db->quoteName('m.level') . '=2' . ' AND ' . $db->quoteName('m.id') . '!=101')
-            ->order($db->quoteName('m.lft') . ' ASC');
+            ->select($db->quoteName(array('c.id', 'c.title', 'c.introtext', 'c.images','ca.alias','c.urls' ), array('id', 'title', 'introtext', 'images', 'caalias', 'urls')))
+            ->from($db->quoteName('#__content', 'c', '#__categories','ca'))
+            ->join('INNER', $db->quoteName('#__categories', 'ca') . ' ON (' . $db->quoteName('c.catid') . ' = ' . $db->quoteName('ca.id') . ')')
+            ->where($db->quoteName('c.catid') . '='.$db->Quote($categoryid) . ' AND ' . $db->quoteName('c.state') . '=1' )
+            ->order($db->quoteName('c.ordering') . ' ASC');
 
 
         $db->setQuery($query);
-        $items = $db->loadObjectList();
-        $menuItem = "<ul class=\"nav navbar-nav\" id=\"mainNav\">";
-        foreach ($items as $item) {
-            if ($db->loadResult()) {
-                $menuItem .= " <li class=\"active\" id=\"firstLink\">";
-                $menuItem .= "<a href=\"#\" class=\"scroll-link\">$item->title</a>";
-                $menuItem .= "</li>";
-                $menuItem .= "</a>";
+        $items = ($items = $db->loadObjectList())?$items:array();
 
+        return $items;
 
-            }
-        }
-        return $menuItem;
     }
+
 
 }
 

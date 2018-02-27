@@ -12,4 +12,18 @@
         <filename module="mod_tictok_home_testimonials">mod_tictok_home_testimonials.php</filename>
 
     </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="category"
+                       type="category"
+                       extension="com_content"
+                       label="Select a category"
+                       default="70"
+                       required="required"/>
+            </fieldset>
+
+        </fields>
+
+    </config>
 </extension>

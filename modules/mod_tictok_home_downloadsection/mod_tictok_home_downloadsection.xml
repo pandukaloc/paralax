@@ -12,4 +12,19 @@
         <filename module="mod_tictok_home_downloadsection">mod_tictok_home_downloadsection.php</filename>
 
     </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="category"
+                       type="category"
+                       extension="com_content"
+                       label="Select a category"
+                       default="70"
+                       required="required"/>
+
+            </fieldset>
+
+        </fields>
+
+    </config>
 </extension>

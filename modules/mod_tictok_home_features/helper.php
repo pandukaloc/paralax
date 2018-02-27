@@ -3,6 +3,7 @@ defined('_JEXEC') or die;
 
 class modfeatures
 {
+
   public function getHtml($categoryid)
     {
         

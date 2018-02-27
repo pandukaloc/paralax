@@ -2007,6 +2007,8 @@ canvas {
     position: absolute;
     left: 19%;
 }
+.firstoverlay{
+margin-bottom: 150px;}
 
 
 /*=================================================================
@@ -6728,6 +6730,9 @@ blockquote:before {
     }
     .download .overlay {
         padding-bottom: 0
+    }
+    .download .firstoverlay{
+    margin-bottom: 120px;
     }
     .download .download-content .image-download img {
         position: relative;

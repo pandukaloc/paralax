@@ -4,7 +4,7 @@ defined('_JEXEC') or die;
 class modaboutus
 {
 
-public function getcalalias($categoryid)
+public function getcatalias($categoryid)
 {
     $db = JFactory::getDbo();
 

@@ -6,7 +6,7 @@ defined('_JEXEC') or die;
 require_once dirname(__FILE__).DIRECTORY_SEPARATOR.'helper.php';
 
 $about_section = modaboutus::getHtml($params->get('category'));
-$cat_alias = modaboutus::getcalalias($params->get('category'));
+$cat_alias = modaboutus::getcatalias($params->get('category'));
 
 
 
