@@ -1,5 +1,5 @@
 
-<section id="faqs" class="faqs">
+<section id="<?php echo $cat_alias->caalias;?>" class="faqs">
 	<div class="container">
 		<!-- Start Section Title -->
 		<div class="row">
@@ -19,24 +19,27 @@
 				</div>
 			</div>
 			<!-- End Faqs Photo -->
+
 			<!-- Start Faqs Content -->
 			<div class="col-md-6 col-sm-12 wow fadeInLeft" data-wow-duration="1s">
 				<div class="faq-content-wrapper">
 					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+<?php x0 ?>
 						<!-- Start Single Faq -->
 						<div class="panel">
-							<div class="panel-heading" role="tab" id="headingOne">
+							<div class="panel-heading" role="tab" id="heading1">
 								<h4 class="panel-title">
-									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">1. Reliable and Secure Platform?</a>
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class=""></a>
 								</h4>
 							</div>
-							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
 								<div class="panel-body">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrd exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore</p>
 								</div>
 							</div>
 						</div>
 						<!-- End Single Faq -->
+
 						<!-- Start Single Faq -->
 						<div class="panel">
 							<div class="panel-heading" role="tab" id="headingTwo">
