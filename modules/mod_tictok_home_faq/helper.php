@@ -35,7 +35,7 @@ class modpagefaq
 
 
         $db->setQuery($query);
-        $items = ($items = $db->loadObject())?$items:array();
+        $items = ($items = $db->loadObjectList())?$items:array();
         return $items;
 
     }
