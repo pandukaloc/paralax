@@ -1,4 +1,7 @@
-<section id="<?php echo $cat_alias->caalias;?>" class="video-app text-center">
+
+
+
+<section id="<?php echo $cat_alias->caalias;?>" style="background-image: url(<?php echo json_decode($about_section[0]->images)->image_intro ; ?>)" class="video-app text-center">
 	<div class="container">
 		<?php foreach($about_section as $videoitems){?>
 		<!-- Start Link Video -->

@@ -18,7 +18,7 @@ error_reporting(0);
     <meta name="author" content="Alaa Ahmed">
 
     <!-- Page Title -->
-    <title>tictok</title>
+    <title>tekto</title>
 
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,7 +53,7 @@ error_reporting(0);
     ==================================== -->
 
 <header id="home" class="home bg-image bigTine">
-    <div id="bg-shader" data-ambient-color="#c21500" data-diffuse-color="#ffc500"></div>
+    <div id="bg-shader" data-ambient-color="#FF4500" data-diffuse-color="#FF4500"></div>
 
     <!-- Start Navigation Bar -->
 

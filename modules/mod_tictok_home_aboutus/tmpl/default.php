@@ -1,10 +1,12 @@
 
 <section id="<?php echo $cat_alias->caalias; ?>" class="about">
-    <div class="container">
+<div class="container"><h2 style="padding-left: 60px">How It Works</h2></div>
+    <div class="container-fluid">
+
         <div class="row">
             <div class="mobile-features">
                 <!-- Start Mobile Slider -->
-                <div class="col-md-4">
+                <div class="col-md-7">
                     <div class="features-slider owl-carousel owl-theme wow fadeInLeft" data-wow-duration="1s">
                         <?php foreach ($about_section as $aboutsection){?>
                         <div class="item">
@@ -38,7 +40,7 @@
                 </div>
                 <!-- End Mobile Slider -->
                 <!-- Start Mobile Slider Content -->
-                <div class="col-md-8">
+                <div class="col-md-3">
                     <!-- Start Slider Links -->
                     <ul class="nav nav-pills nav-stacked">
                         <li class="active-icon" data-owl-item="0"><a href="#tab_1" data-toggle="pill"><i class="fa fa-commenting-o"></i></a></li>

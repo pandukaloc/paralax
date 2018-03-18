@@ -1354,7 +1354,7 @@ canvas {
     font-weight: 800;
     color: #fff;
     margin-bottom: 15px;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .header-content h4 {
@@ -1409,13 +1409,13 @@ canvas {
 
 .about .mobile-features .features-slider:after {
     content: '';
-    display: block;
+    display: none;
     position: absolute;
     width: 437px;
     height: 437px;
     border-radius: 50%;
     top: 69px;
-    left: 59px;
+    left: 250px;
     z-index: -1;
     border-right: 1px dashed #ccc;
 }
@@ -1523,21 +1523,21 @@ canvas {
 /*Mobile*/
 
 .about .mobile-features .features-slider {
-    padding: 71px 26px 85px 20px;
-    background: rgba(0, 0, 0, 0) url(https://image.ibb.co/hCPs2G/screen_trans.png) no-repeat scroll top center;
+       padding: 97px 100px 137px 100px;
+    background: rgba(0, 0, 0, 0) url(../../../images/macbook.png) no-repeat scroll top center;
     background-size: 100%;
-    max-width: 293px;
+    /*max-width: 293px;*/
     margin: 0 auto;
-    margin-top: 0;
+    margin-top: 20px;
     position: relative
 }
 
 .about .mobile-features .features-slider .owl-nav {
-    margin-top: 100px
+    margin-top: 150px
 }
 
 .about .mobile-features .features-slider.owl-carousel .owl-item img {
-    max-width: 247px;
+    max-height: 100%;
 }
 
 /*=================================================================
@@ -2678,7 +2678,7 @@ margin-bottom: 150px;}
     background: rgba(255, 255, 255, .1);
     text-align: center;
     padding: 30px 30px 50px;
-    margin: 0 15px 100px;
+    margin: 0 15px 150px;
     margin-top: 40px;
     position: relative;
     -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, .1);
@@ -2706,6 +2706,7 @@ margin-bottom: 150px;}
     text-align: center;
     margin-bottom: 30px;
     line-height: 26px;
+    min-height:200px;
 }
 
 .testimonials02 .testimonial .testimonial-content {
@@ -6660,7 +6661,7 @@ blockquote:before {
         width: 100% !important
     }
     .about .mobile-features .features-slider {
-        padding: 66px 26px 106px 18px;
+        padding: 51px 57px 100px 57px;
     }
     .about .mobile-features .nav-pills>li>a {
         position: static;
@@ -7042,4 +7043,15 @@ blockquote:before {
     .text-not-found p {
         width: 400px
     }
+     
+}
+@media only screen and (max-width: 480px ) {
+    .about .mobile-features .features-slider {
+        padding: 51px 57px 100px 57px !important ;
+    }
+
+}
+.wrap_h1{
+    display: inline-block;
+
 }

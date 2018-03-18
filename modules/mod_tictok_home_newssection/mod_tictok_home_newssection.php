@@ -9,4 +9,4 @@ $html = modpagenews::getHtml();
 //$htmlmob=modpageheader::getHtmlMobile();
 require JModuleHelper::getLayoutPath('mod_tictok_home_newssection');
 
-?>
+?> 

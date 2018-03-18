@@ -27,7 +27,7 @@
                             </p>
 
 							<div class="testimonial-content">
-								<div class="pic02"><img src="<?php echo JURI::base().json_decode($aboutsection->images)->image_intro; ?>" alt="Applora"></div>
+								<div class="pic02"><img style="width: 100px; " src="<?php echo JURI::base().json_decode($aboutsection->images)->image_intro; ?>" alt="Applora"></div>
 								<h3 class="title blfo"><?php echo $aboutsection->title; ?></h3>
 								<span class="post blfo"><?php echo json_decode($aboutsection->images)->image_intro_caption; ?></span>
 							</div>
